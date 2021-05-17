@@ -1,0 +1,22 @@
+{
+  "name": "documentation",
+  "version": "1.0.0",
+  "description": "This is front-end documentation!",
+  "main": "index.js",
+  "repository": "https://github.com/caoyq0521/documentation.git",
+  "author": "曹永强 <caoyongqiang@aihujing.com>",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy-gh": "GH=1 yarn docs:build && bash scripts/deploy-gh.sh"
+  },
+  "devDependencies": {
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-demo-container": "^0.2.0"
+  },
+  "dependencies": {
+    "async-validator": "1.11.5",
+    "element-ui": "^2.15.1"
+  }
+}
