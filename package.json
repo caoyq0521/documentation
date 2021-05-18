@@ -12,6 +12,10 @@
     "deploy-gh": "GH=1 yarn docs:build && bash scripts/deploy-gh.sh"
   },
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "node-sass": "4.14.1",
+    "sass-loader": "9.0.0",
+    "scss": "^0.2.4",
     "vuepress": "^1.8.2",
     "vuepress-plugin-demo-container": "^0.2.0"
   },

@@ -17,6 +17,14 @@ module.exports = {
   description: "This is front-end documentation.",
   base: '/documentation/',
   themeConfig: {
+    lastUpdated: '最后更新时间',
+    repo: 'caoyq0521/documentation',
+    repoLabel: '查看源码',
+    docsDir: 'docs',
+    docsBranch: 'master',
+    editLinks: true,
+    editLinkText: '帮助我们改善此页面！',
+    smoothScroll: true,
     // nav: [
     //   { text: 'web', link: '/web' },
     //   { text: 'H5', link: '/H5' },
@@ -26,30 +34,22 @@ module.exports = {
       '/web/': [
         {
           title: '组件',
-          // collapsable: true,
           sidebarDepth: 1,
           children: [
-            { title: 'HjBaseTitle', path: '/web/components/HjBaseTitle' },
-            { title: '前端01', path: '/web/components/test2' },
+            { title: 'HjBaseTitle', path: '/web/components/HjBaseTitle' }
           ]
         },
         {
           title: '指令',
-          // collapsable: true,
-          sidebarDepth: 1,
-          children: [
-            { title: '前端内容', path: '/web/components/test' },
-            { title: '前端01', path: '/web/components/test2' },
-          ]
+          path: '/web/directive/'
         },
         {
           title: '混入',
-          // collapsable: true,
-          sidebarDepth: 1,
-          children: [
-            { title: '前端内容', path: '/web/components/test' },
-            { title: '前端01', path: '/web/components/test2' },
-          ]
+          path: '/web/mixins/'
+        },
+        {
+          title: '过滤器',
+          path: '/web/filters/'
         },
         {
           title: '方法',
@@ -70,7 +70,7 @@ module.exports = {
     // ]
     
   },
-  plugins: ['demo-container'],
+  plugins: ['demo-container', '@vuepress/back-to-top'],
   "demo-block": {
     "hide-text": "隐藏代码",
     "show-text": "显示代码",
