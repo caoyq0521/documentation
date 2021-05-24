@@ -1,21 +1,68 @@
 # HjBaseTitle 标题
 
+基本的标题组件
+
+### 基础用法
+
 ::: demo
 ```html
 <template>
-   <hj-base-title></hj-base-title>
+   <hj-base-title :title="title" />
 </template>
 <script>
 export default {
   data() {
     return {
-      message: 'Hello Vue'
+      title: '这是一段标题文本'
     }
   }
 }
 </script>
 :::  
 
+### 带提示信息的标题
+
+::: demo tipsInBrackets属性可以将提示信息放在 `()` 中。它接受一个Boolean，默认为false，设置为true即为启用。
+```html
+<template>
+   <hj-base-title 
+    :title="title" 
+    :tips="tips"
+    tips-in-brackets
+  />
+</template>
+<script>
+export default {
+  data() {
+    return {
+      title: '这是一段标题文本',
+      tips: '这是一段提示信息文本'
+    }
+  }
+}
+</script>
+:::  
+
+### 必填提示
+
+::: demo 默认情况下 `*` 不显示，如果需要，可以使用 `isRequired`属性。它接受一个Boolean，默认为false，设置为true即为启用。
+```html
+<template>
+   <hj-base-title 
+    :title="title"
+    is-required
+  />
+</template>
+<script>
+export default {
+  data() {
+    return {
+      title: '这是一段标题文本'
+    }
+  }
+}
+</script>
+:::  
 
 ### Options
 
