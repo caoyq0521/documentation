@@ -36,7 +36,8 @@ module.exports = {
           title: '组件',
           sidebarDepth: 1,
           children: [
-            { title: 'HjBaseTitle', path: '/web/components/HjBaseTitle' }
+            { title: 'HjBaseTitle', path: '/web/components/HjBaseTitle' },
+            { title: 'appletsUpload', path: '/web/components/appletsUpload' }
           ]
         },
         {
