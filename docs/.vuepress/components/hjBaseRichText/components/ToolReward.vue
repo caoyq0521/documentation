@@ -63,7 +63,7 @@ export default {
       default: ''
     },
     target: {
-      type: Element,
+      type: Object,
       default: () => ({})
     },
     trigger: {
