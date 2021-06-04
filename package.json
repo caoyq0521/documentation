@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-medium-zoom": "^1.8.2",
     "node-sass": "4.14.1",
     "sass-loader": "9.0.0",
     "scss": "^0.2.4",
@@ -21,6 +22,7 @@
   },
   "dependencies": {
     "async-validator": "1.11.5",
-    "element-ui": "^2.15.1"
+    "element-ui": "^2.15.1",
+    "vuedraggable": "^2.24.3"
   }
 }

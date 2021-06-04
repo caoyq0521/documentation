@@ -1,0 +1,49 @@
+.v-flex-center  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-csp {
+  cursor: pointer;
+}
+
+.dialog-actions-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+
+  .action-confirm {
+    width: 115px;
+    height: 36px;
+    border-radius: 5px;
+    background-color: $color-primary;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 36px;
+    cursor: pointer;
+  }
+
+  .action-confirm.danger {
+    background-color: $color-red !important;
+  }
+
+  .action-confirm:hover {
+    opacity: 0.85;
+  }
+
+  .action-cancel {
+    width: 115px;
+    height: 36px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 36px;
+    cursor: pointer;
+  }
+
+  .action-cancel:hover {
+    background-color: #f4f4f6;
+  }
+}

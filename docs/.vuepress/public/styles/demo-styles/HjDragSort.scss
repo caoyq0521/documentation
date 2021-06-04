@@ -1,0 +1,14 @@
+.hj-drag-sort__demo2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 100px;
+    background-color:  rgba(216, 216, 216, 0.3);;
+  }
+}
