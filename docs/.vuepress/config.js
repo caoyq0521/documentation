@@ -26,11 +26,11 @@ module.exports = {
     editLinks: true,
     editLinkText: '帮助我们改善此页面！',
     smoothScroll: true,
-    // nav: [
-    //   { text: 'web', link: '/web/' },
-    //   { text: 'H5', link: '/H5/' },
-    //   { text: '企微', link: '/qw/' },
-    // ],
+    nav: [
+      { text: 'web', link: '/web/' },
+      // { text: 'H5', link: '/H5/' },
+      { text: '企微', link: '/qw/' },
+    ],
     sidebar: {
       '/web/': [
         {
@@ -94,7 +94,20 @@ module.exports = {
         }
       ],
       '/h5/': [],
-      '/qw/': []
+      '/qw/': [
+        {
+          title: '组件',
+          children: [
+            { title: 'BaseExpandCollapse 文本超出隐藏', path: '/qw/components/BaseExpandCollapse' },
+            { title: 'HjFileIcon 文件icon', path: '/qw/components/HjFileIcon' },
+            { title: 'QwBack 返回', path: '/qw/components/QwBack' },
+          ]
+        },
+        {
+          title: '方法',
+          path: '/qw/methods/'
+        }
+      ]
     }
   },
   plugins: [
