@@ -23,6 +23,7 @@
   "dependencies": {
     "async-validator": "1.11.5",
     "element-ui": "^2.15.1",
+    "vant": "^2.12.21",
     "vuedraggable": "^2.24.3"
   }
 }

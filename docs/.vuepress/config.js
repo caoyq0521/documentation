@@ -29,7 +29,7 @@ module.exports = {
     nav: [
       { text: 'web', link: '/web/' },
       // { text: 'H5', link: '/H5/' },
-      { text: '企微', link: '/qw/' },
+      { text: '企微', link: '/qw/introduction/' },
     ],
     sidebar: {
       '/web/': [
@@ -96,16 +96,33 @@ module.exports = {
       '/h5/': [],
       '/qw/': [
         {
+          title: '介绍',
+          path: '/qw/introduction/'
+        },
+        {
           title: '组件',
           children: [
             { title: 'BaseExpandCollapse 文本超出隐藏', path: '/qw/components/BaseExpandCollapse' },
             { title: 'HjFileIcon 文件icon', path: '/qw/components/HjFileIcon' },
             { title: 'QwBack 返回', path: '/qw/components/QwBack' },
+            { title: 'QwDialog 弹框', path: '/qw/components/QwDialog' },
+            { title: 'QwSearch 搜索', path: '/qw/components/QwSearch' },
+          ]
+        },
+        {
+          title: '混入',
+          children: [
+            { title: 'clickOutside 点击外部', path: '/qw/mixins/clickOutside' },
+            { title: 'encrypt 手机号复制', path: '/qw/mixins/encrypt' }
           ]
         },
         {
           title: '方法',
           path: '/qw/methods/'
+        },
+        {
+          title: '目录结构',
+          path: '/qw/directory/'
         }
       ]
     }
