@@ -8,6 +8,6 @@ vue全家桶 + [企业微信API](https://work.weixin.qq.com/api/doc/90001/90144/
 
 ## 注意点
 
-1、只要是新页面就需在 `created` 周期中进行企微注入，使用 `this.$tool.setWxInit();`；
+1、只要是新页面需要和企微交互的就需在 `created` 周期中进行企微注入，使用 `this.$tool.setWxInit();`；
 
 2、修改bug时，只需替换 `@/router/localInfo.js` 里 `data`中的 `tmToken` 字段，就可以拿到相对应测试的客户列表；

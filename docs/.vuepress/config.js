@@ -42,6 +42,7 @@ module.exports = {
             { title: 'HjBaseRichText 富文本', path: '/web/components/HjBaseRichText' },
             { title: 'HjBaseTitle 标题', path: '/web/components/HjBaseTitle' },
             { title: 'HjDateRange 时间范围', path: '/web/components/HjDateRange' },
+            { title: 'HjDayMonthYearRangePicker 日周月时间范围', path: '/web/components/HjDayMonthYearRangePicker' },
             { title: 'HjDragSort 拖拽', path: '/web/components/HjDragSort' },
             { title: 'HjFileIcon 文件icon', path: '/web/components/HjFileIcon' },
             { title: 'HjHelpTip 提示信息', path: '/web/components/HjHelpTip' },
@@ -130,6 +131,7 @@ module.exports = {
   plugins: [
     'demo-container',
     '@vuepress/back-to-top',
-    '@vuepress/medium-zoom'
+    '@vuepress/medium-zoom',
+    require('dateformat')
   ],
 }
