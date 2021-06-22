@@ -315,7 +315,24 @@ this.$tool.dayWeekMonthFormat('2021-04-14 14:00:00', 2);
 
 - 参数
 
-  - {Blob} data 流文件数据
+  - {Blob} data 后台返回接口流文件数据
+  - {String} fileName 下载之后的文件名
+
+- 示例
+
+```js
+this.$tool.downLoadMethods(Blob, 'test.png');
+```
+
+## downLoadBlob
+
+- 用法
+
+  下载bolb 或 base64。
+
+- 参数
+
+  - {Blob} bolb bolb对象或base64
   - {String} fileName 下载之后的文件名
 
 - 示例
@@ -823,3 +840,83 @@ this.$tool.secondFormat(5000000);
 ## urlFormat
 
 请使用 [jsonToUrl](#jsontourl)
+
+## base64ToFile
+
+- 用法
+
+  base64文件转为File
+
+- 参数
+  
+  - {String} base64Data base数据
+  - {String} fileName 文件名
+
+- 返回值
+  
+  - {File} 返回文件类型数据
+
+## formatBytes
+
+- 用法
+
+  字节转实际大小
+
+- 参数
+
+  - {Number} a 字节数
+  - {Number} b 保留小数位数默认2位
+  
+- 返回值
+  
+  - {String} 友好显示的文件大小单位 ["Bytes", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"]
+
+## getBytesCount
+
+- 用法
+
+  获取字符串长度，汉字所占长度为2
+
+- 参数
+
+  - {String} str 字符串
+
+- 返回值
+
+  - {Number} 字符串长度
+
+## dataToString
+
+- 用法
+
+  转换时间格式 2020-02-02 11:11:11 => 20200202
+
+- 参数
+
+  - {String} time 字符串
+
+- 返回值
+
+  - {String} 字符串
+
+## 类型判断
+
+- 用法
+
+  is + 'String', 'Function', 'Array', 'Number', 'RegExp', 'Object', 'Boolean' 判断类型
+
+- 参数
+
+  - {any} obj 任意类型
+
+- 返回值
+
+  - {Boolean} 
+
+- 示例
+
+```js
+  this.$tool.isNumber(5000000);
+  
+// => true
+```
