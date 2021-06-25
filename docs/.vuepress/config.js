@@ -11,7 +11,15 @@ module.exports = {
     }
   },
   head: [
-    ['link', { rel: 'shortcut icon', type: "image/x-icon", href: 'favicon.ico' }]
+    ['link', { rel: 'shortcut icon', type: "image/x-icon", href: 'favicon.ico' }],
+    ['script', {}, `
+      var _hmt = _hmt || [];
+      (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?619bce33d3d0afd261bb503674730cc7";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    `]
   ],
   title: "文档",
   description: "This is front-end documentation.",
