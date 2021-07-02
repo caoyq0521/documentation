@@ -114,6 +114,7 @@ module.exports = {
           children: [
             { title: 'BaseExpandCollapse 文本超出隐藏', path: '/qw/components/BaseExpandCollapse' },
             { title: 'HjFileIcon 文件icon', path: '/qw/components/HjFileIcon' },
+            { title: 'HjList 列表', path: '/qw/components/HjList' },
             { title: 'QwBack 返回', path: '/qw/components/QwBack' },
             { title: 'QwDialog 弹框', path: '/qw/components/QwDialog' },
             { title: 'QwSearch 搜索', path: '/qw/components/QwSearch' },
