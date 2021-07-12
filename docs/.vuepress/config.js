@@ -113,6 +113,7 @@ module.exports = {
           title: '组件',
           children: [
             { title: 'BaseExpandCollapse 文本超出隐藏', path: '/qw/components/BaseExpandCollapse' },
+            { title: 'AdaptiveInput 动态表单', path: '/qw/components/AdaptiveInput' },
             { title: 'HjFileIcon 文件icon', path: '/qw/components/HjFileIcon' },
             { title: 'HjList 列表', path: '/qw/components/HjList' },
             { title: 'QwBack 返回', path: '/qw/components/QwBack' },

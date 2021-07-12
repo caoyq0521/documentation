@@ -8,12 +8,17 @@ import './public/fontIcon/iconfont.css';
 import './public/styles/index.scss';
 import HjBaseRichText from './components/hjBaseRichText/index';
 import EmojiPicker from './components/emojiPicker/index';
+import AdaptiveInput from './components/adaptiveInput';
+import tools from './tools'
 
 export default ({ Vue, options, router }) => {
+  Vue.use(AdaptiveInput);
   Vue.use(Element);
   Vue.use(Vant);
   Vue.component('hj-base-rich-text', HjBaseRichText);
   Vue.component('emoji-picker', EmojiPicker);
+
+  Vue.prototype.$tool = tools
 
   router.beforeEach((to, from, next) => {
     //触发百度的pv统计
