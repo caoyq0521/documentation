@@ -24,6 +24,8 @@ color | 输入文本的颜色 | String | - | #333333
 content | 初始化内容 | String  | - | -
 disabled | 是否禁用 | Boolean | - | false
 placeholder | 编辑区域占位文本 | String | - | 请输入内容
+maxlength | 最大输入长度 | Number | - | Infinity
+showWordLimit | 是否显示输入字数统计 | Boolean | - | false
 trigger | 带弹出框工具的触发方式（工具 `具体trigger` 会覆盖 `trigger` 参数的值） | String | click/foucs/hover/manual | hover
 emoticonsTrigger | 表情工具 弹出框触发方式 | String | click/foucs/hover/manual | click
 rewardRemainingTrigger | 库存剩余工具 弹出框触发方式 | String | click/foucs/hover/manual | -
