@@ -62,6 +62,10 @@ module.exports = {
             { title: 'HjSharePreview 分享预览', path: '/web/components/HjSharePreview' },
             { title: 'HjTag 标签', path: '/web/components/HjTag' },
             { title: 'ImgCutter 图片裁剪', path: '/web/components/ImgCutter' },
+            { title: 'rankingInit 初始排行榜生成', path: '/web/components/rankingInit' },
+            { title: 'welcomeMaterial 欢迎语素材', path: '/web/components/welcomeMaterial' },
+            { title: 'hjDefaultImage', path: '/web/components/hjDefaultImage' },
+            { title: 'ImageInfo table图文显示', path: '/web/components/ImageInfo' },
           ]
         },
         {
