@@ -1,0 +1,43 @@
+// ul, li {
+//   list-style: none;
+// }
+.page {
+  table {
+    display: table;
+    width: 100%;
+    margin-bottom: 45px;
+    line-height: 1.5em;
+    font-size: 14px;
+    background-color: #fff;
+    border-collapse: collapse;
+
+    tr, th, td {
+      border: none;
+    }
+
+    tr:nth-child(2n) {
+      background-color: transparent;
+    }
+
+    th, td {
+      border-bottom: 1px solid #dcdfe6;
+      padding: 15px;
+      max-width: 250px;
+    }
+
+    th {
+      text-align: left;
+      white-space: nowrap;
+      color: #909399;
+      font-weight: 400;
+    }
+
+    td {
+      color: #606266;
+    }
+  }
+}
+
+.theme-default-content.custom {
+  display: none;
+}
