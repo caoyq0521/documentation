@@ -8,7 +8,7 @@
 
 - 示例
 
-```js
+```vue
   <el-button
     type="text"
     v-clipboard:copy="'复制的字符串'"
@@ -34,7 +34,7 @@
 
 - 示例
 
-```js
+```vue
 <template>
   <div v-debounceClick="fn">
     防抖点击
@@ -104,3 +104,18 @@ export default {
 - 说明
 
   粘性布局指令
+
+
+## v-table-auto-top
+
+- 说明
+  
+  `<el-table>`组件数据变化时自动滚动到顶部,可用于列表翻页时自动滚动
+
+- 用法
+
+  ``` vue
+  <!-- 当list发生变化时表格滚动条自动滚动到顶部 -->
+  <el-table :data="list" v-table-auto-top>
+  ```
+  

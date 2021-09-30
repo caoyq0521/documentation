@@ -7,7 +7,7 @@
   "author": "曹永强 <caoyongqiang@aihujing.com>",
   "license": "MIT",
   "scripts": {
-    "docs:dev": "vuepress dev docs --open",
+    "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "deploy-gh": "GH=1 yarn docs:build && bash scripts/deploy-gh.sh"
   },
