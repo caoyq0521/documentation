@@ -26,6 +26,7 @@ placeholder | 弹窗标题 | String | - | 选择部门/员工
 filterPlaceholder | 过滤部门/员工输入框占位 | String | - | 搜索成员或部门
 canEmpty | 是否开启非空校验 | Boolean | - | false
 emptyPlaceholder | 非空校验占位符 | Boolean | - | 请至少选择一个部门或员工
+disableNode | 是否禁用节点,默认返回innerDisabled的状态,`innerDisabled`为组件内部根据disableIds参数计算后的禁用结果,该函数的返回值将覆盖`innerDisabled`的结果 | Function | - | `disableNode(node, innerDisabled) => innerDisabled`
 
 ### Events
 

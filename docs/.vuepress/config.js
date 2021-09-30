@@ -122,6 +122,10 @@ module.exports = {
           ]
         },
         {
+          title: '指令',
+          path: '/qw/directive/'
+        },
+        {
           title: '混入',
           children: [
             { title: 'clickOutside 点击外部', path: '/qw/mixins/clickOutside' },
